@@ -8,15 +8,15 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Servlet implementation class List
+ * Servlet implementation class UpdateData
  */
-public class List extends HttpServlet {
+public class UpdateData extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public List() {
+    public UpdateData() {
         super();
         // TODO Auto-generated constructor stub
     }

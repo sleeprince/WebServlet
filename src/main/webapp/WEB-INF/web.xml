@@ -21,13 +21,13 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>List</display-name>
-    <servlet-name>List</servlet-name>
-    <servlet-class>user.List</servlet-class>
+    <display-name>ListPage</display-name>
+    <servlet-name>ListPage</servlet-name>
+    <servlet-class>user.ListPage</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>List</servlet-name>
-    <url-pattern>/List</url-pattern>
+    <servlet-name>ListPage</servlet-name>
+    <url-pattern>/ListPage</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>
@@ -48,5 +48,33 @@
   <servlet-mapping>
     <servlet-name>Select</servlet-name>
     <url-pattern>/Select</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>ServletFilter</filter-name>
+    <filter-class>utils.ServletFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>ServletFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>InsertData</display-name>
+    <servlet-name>InsertData</servlet-name>
+    <servlet-class>user.InsertData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertData</servlet-name>
+    <url-pattern>/InsertData</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateData</display-name>
+    <servlet-name>UpdateData</servlet-name>
+    <servlet-class>user.UpdateData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateData</servlet-name>
+    <url-pattern>/UpdateData</url-pattern>
   </servlet-mapping>
 </web-app>
