@@ -77,4 +77,14 @@
     <servlet-name>UpdateData</servlet-name>
     <url-pattern>/UpdateData</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteData</display-name>
+    <servlet-name>DeleteData</servlet-name>
+    <servlet-class>user.DeleteData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteData</servlet-name>
+    <url-pattern>/DeleteData</url-pattern>
+  </servlet-mapping>
 </web-app>

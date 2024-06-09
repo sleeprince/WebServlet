@@ -5,7 +5,6 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 import DB.*;
 
 public class InsertData extends HttpServlet {	
@@ -21,9 +20,7 @@ public class InsertData extends HttpServlet {
 		
 		AppController db = new AppController();
 		db.insertData(name, email, pwd, gen);
-		
-		List<DBTable> list = db.getData();
-		request.setAttribute("data_list", list);
+
 		response.sendRedirect("ListPage");
 	}
 

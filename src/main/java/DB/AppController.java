@@ -66,7 +66,7 @@ public class AppController {
 		
 		data.setNo(no);
 		data.setName(name);
-		data.setEmail(email);		
+		data.setEmail(email);	
 		data.setPwd(pwd);
 		data.setGen(gen);
 		
@@ -88,5 +88,15 @@ public class AppController {
 			System.out.println(data);
 		}
 		return list;
+	}
+	
+	public DBTable getData(int no){
+		List<DBTable> list = new ArrayList<>();
+		sql = "select * from USER where (삭제=0) AND (번호=" + no + ")";
+		list = db.getData(conn, sql);
+		for(DBTable data : list) {
+			System.out.println(data);
+		}
+		return list.get(0);
 	}
 }

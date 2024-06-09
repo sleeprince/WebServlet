@@ -36,11 +36,14 @@
 	    <%
 	    	for(DBTable data : list){
 	    %>
-	      <tr class="cursor-pointer" onclick="location.href = 'Select';">
+	    <form name="frm<%=data.getNo()%>" action="Select" method="post">
+	      <input type="hidden" name="number" value="<%=data.getNo()%>">
+	      <tr class="cursor-pointer" onclick="javascript: frm<%=data.getNo()%>.submit();">
 	        <td><%=data.getName()%></td>
-	        <td><%=data.getEmail() %></td>
-	        <td><%=data.getDate() %></td>
+	        <td><%=data.getEmail()%></td>
+	        <td><%=data.getDate()%></td>
 	      </tr>
+	    </form>   
        <%
 	    	}
        %>

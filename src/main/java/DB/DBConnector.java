@@ -84,7 +84,7 @@ public class DBConnector {
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, data.getName());
 			pstmt.setString(2, data.getEmail());
-			pstmt.setString(3, data.getDate());
+			pstmt.setString(3, data.getPwd());
 			pstmt.setInt(4, data.getGen());
 			pstmt.setInt(5, data.getNo());
 			
